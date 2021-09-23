@@ -69,6 +69,7 @@ body{
 
 .icon{
     margin:0 2vw;
+    cursor: pointer;
 }
 #short-list{
     display:none;
