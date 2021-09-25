@@ -9,17 +9,23 @@
     <script src="https://kit.fontawesome.com/01dbe0859c.js" crossorigin="anonymous"></script>   
 </head>
 <body>
-   <div class="btn">
+   <div onclick="sidebarOpener()" class="btn">
        <div class="btn-div"></div>
        <div class="btn-div"></div>
        <div class="btn-div"></div> 
        
 
     </div>
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar ">
         <div class="img">  
             <img src="./logo.svg" alt="Logo"/>
         </div>
+        <div onmouseleave="mouseLeave()" id="cross" class="cross"> 
+            <div class="one"></div>
+            <div class="two"></div>
+
+        </div>
+
         <div class="nav"> 
             <div class="nav-lists">Home </div>
             <div class="nav-lists"> About</div>
@@ -37,6 +43,7 @@
         </div>
 
     </div>
+    <script src="./script.js" >  </script>
    
 </body>
 </html>
