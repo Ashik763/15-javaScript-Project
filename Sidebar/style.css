@@ -132,6 +132,9 @@ body{
     transition:transform 1s;
 }
 .cross{
+    position: absolute;
+    top:40px; 
+    right:40px;
     transform:rotate(-90deg);
     transition:transform 1s;
 }
