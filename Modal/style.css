@@ -82,7 +82,7 @@ span{
 
     display:none;
     /* background-color: rgb(205, 241, 247); */
-    background-color: rgba(128, 168, 171, 0.7);
+    background-color: rgba(177, 218, 221, 0.7);
     top:0;
     left:0;
     width: 100vw;
@@ -108,7 +108,7 @@ span{
     position:absolute;
     height:3px;
     width:12px;
-    background-color:red;
+    background-color:rgb(175, 37, 37);
     transform:rotate(45deg);
     top:0px;
     left: 1px;
@@ -117,7 +117,7 @@ span{
     position:absolute;
     height:3px;
     width:12px;
-    background-color:red;
+    background-color:rgb(175, 37, 37);
     transform:rotate(-45deg);
     left: 1px;
     top:0px;
