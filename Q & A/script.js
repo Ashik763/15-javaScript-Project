@@ -4,13 +4,13 @@ function boxInfo(event){
     let iconDiv = box.parentElement;
     let boxDiv = iconDiv.parentElement;
     let one = boxDiv.parentElement;
-    
+    //console.log(one);
     let borderBottom = one.children[0].children;
-    
+   // console.log(borderBottom[0]);
     borderBottom[0].classList.toggle("border-bottom")
-    
+    one.classList.toggle("oneWithAnswer");
     let answer = boxDiv.parentElement.nextElementSibling; 
-    one.classList.toggle("oneWithAnswer")
+   
     answer.classList.toggle("toggler");
     // answer.classList.toggle("answer");
     // console.log(answer);
@@ -22,14 +22,14 @@ function boxInfo(event){
     // let icon = div.classList.contains("fa-plus");
     // console.log(icon.classList.contains("fa-plus"));
     if(box.classList.contains("fa-plus")){
-        console.log("entered");
+       // console.log("entered");
         boxDiv.innerHTML = "";
         boxDiv.innerHTML =  `<div class="icon">
         <i  class="fas fa-minus"></i>
         </div>`;
     }
     else if(box.classList.contains("fa-minus")){
-        console.log("entered2");
+       // console.log("entered2");
         boxDiv.innerHTML = "";
         boxDiv.innerHTML =  `<div class="icon">
         <i  class="fas fa-plus"></i>
