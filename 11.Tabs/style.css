@@ -162,6 +162,9 @@ ul{
     opacity: .7;
     letter-spacing: 2px;
 }
+.text{
+    opacity: .5;
+}
 
 
 @media(max-width:974px){
