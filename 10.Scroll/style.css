@@ -15,6 +15,32 @@ body{
     height:100vh;
     position: relative;
 }
+.three-lines{
+    visibility:hidden;
+     cursor:all-scroll;
+    position: absolute;
+    top:35px;
+   right:8px;
+    height:29px;
+    width:29px;
+    background-color:transparent;
+    cursor: pointer;
+    display:flex;
+    flex-direction:column;
+    /* justify-content: space-between; */
+}
+
+.three-lines .line{
+    border-radius:5px;
+    margin-bottom:5px;
+    position:relative;
+    background-color:black;
+    height:33%;
+    width:100%;
+    /* cursor:pointer; */
+
+
+}
 .header{
     position: relative;
     border:2px solid #222222;
@@ -87,6 +113,9 @@ body{
     z-index: -2;
 
 } 
+.btn{
+    cursor: pointer;
+}
 
 
     /* INTRODUCTION   */
@@ -106,21 +135,7 @@ body{
          
 
     }
-    /* .intro-text{
-        border: 1px solid red;
-        
-        position:relative;
-        height:100%;
-        text-align:center;
-        width:90vw;
-        max-width: 640px;
-        margin:auto;
-        top:100;
-        left:0;
-        right:0;
-         
 
-    } */
 
     .intro-text h1{
     
@@ -173,5 +188,42 @@ body{
     background-color:white;
     height:80vh;
 
-}   
+}  
+
+.footer{
+    position: relative;
+    background-color:hsl(249, 81%, 17%);
+    height:30vh;
+
+}
+.footer-content h3{
+    width:90vw;
+    letter-spacing:2px;
+  color:white;
+  text-align:center;
+  margin:auto;position: relative;
+  top:10vh;
+
+}
+
+
+
+@media (max-width:780px) {
+    body{
+        /* color:red; */
+    }
+    .nav .lists{
+        display:none;
+    }
+    .header{
+        width:99vw;
+       
+    }
+    .container .three-lines{
+        visibility:visible;
+        cursor: pointer;
+    }
+ 
+    
+}
 
