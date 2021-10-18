@@ -2,7 +2,7 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 let months = ["January", "February", "March", "April",  "May", "June", "July", "August", "September", "October", "November", "December"];
 
-let date = new Date(2021,9,28,11,50,30);
+let date = new Date(2022,6,19,2,35,00);
 
 let endDay = days[date.getDay()];
 let endDate = date.getDate();
