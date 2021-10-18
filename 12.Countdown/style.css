@@ -15,7 +15,7 @@ body{
     width: 95vw;
     max-width:1000px;
     height:70vh;
-    border:2px solid red;
+    /* border:2px solid red; */
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:15px;
@@ -23,7 +23,7 @@ body{
 
 .img{
    /* width:100%; */
-   border:2px solid yellow;
+   /* border:2px solid yellow; */
 
 }
 .img img{
@@ -43,6 +43,8 @@ h2{
 p{
     font-weight: bold;
     margin-top:10px;
+    letter-spacing: 2px;
+
 }
 .small{
     letter-spacing:2px;
@@ -73,10 +75,7 @@ p{
    
 }
 @media(max-width:975px){
-    body {
-        background-color:yellow;
-        
-    }
+ 
     .container{
         /* margin:0 auto ; */
         width:95vw;
