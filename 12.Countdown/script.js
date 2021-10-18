@@ -18,13 +18,18 @@ p[0].innerHTML = `Giveaway Ends On  ${endDay} , ${endDate} ${endMonth} ${endYear
 
 
 function getRemainingTime(){
-    let date2 = new Date(2021,9,28,11,50,30);
+    let date2 = new Date(2022,6,19,2,35,00);
     let futureDate = date2.getTime();
     // console.log(futureDate);
     let date3 = new Date();
     // console.log(new Date());
     let todayDate = date3.getTime();
     let restTime = futureDate - todayDate;
+    if(restTime <0){
+        clearInterval(countdown);
+        p[0].innerHTML = `<h4 class="expired">sorry, this giveaway has expired!</h4>`;
+
+    }
     // console.log(restTime);
     let oneDay = 86400000;
     let oneHour = 3600000;
@@ -47,6 +52,12 @@ function getRemainingTime(){
     let remainingMinutes = Math.floor((restTime%oneHour)/oneMinute); 
     let remainingSeconds = Math.floor((restTime%oneMinute)/oneSecond); 
     // console.log(remainingDays,remainingHours,remainingMinutes,remainingSeconds);
+    if(restTime == 0  || restTime < 0){
+        remainingDays = 0;
+        remainingHours = 0; 
+        remainingMinutes = 0; 
+        remainingSeconds=0;
+    }
 
     let values = [remainingDays,remainingHours,remainingMinutes,remainingSeconds];
 
@@ -57,6 +68,8 @@ function getRemainingTime(){
 
         h3.innerHTML = format(values[index]) ;
     })
+
+  
 
 
 
@@ -70,14 +83,15 @@ function getRemainingTime(){
 
 
  function format(values) {
-     if(values < 10){
+     if(  values < 10){
          values = "0"+values;
          return values;
      }
      return values;
  }
 
- setInterval(getRemainingTime,1000);
+ let countdown = setInterval(getRemainingTime,1000);
+ console.log(countdown);
  getRemainingTime();
 
 // function startTime() {
